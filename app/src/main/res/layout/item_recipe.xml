@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_corner"
+    android:layout_marginTop="25dp"
+    android:layout_marginBottom="50dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        app:roundedCornerRadius="10dp"
+        app:roundBottomLeft="false"
+        app:roundBottomRight="false"
+        android:id="@+id/iv_recipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="3dp"
+        android:lineSpacingMultiplier="1.5"
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_recipe"
+        android:text="ddddddd"
+        android:textColor="#161616"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关键词:"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_keywords"
+            android:layout_toRightOf="@id/tv"
+            android:maxLines="1"
+            android:layout_centerVertical="true"
+            android:paddingLeft="8dp"
+            android:text="ddddddd"
+            android:textColor="#6E6E6E"/>
+    </RelativeLayout>
+
+</LinearLayout>

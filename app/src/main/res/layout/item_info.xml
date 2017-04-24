@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:frecso="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:id="@+id/lv"
+        android:background="@drawable/shape_corner2">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/iv_img" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:lineSpacingExtra="3dp"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="5dp"
+                android:id="@+id/tv_title"
+                android:maxLines="2"
+                android:textSize="15dp"
+                android:ellipsize="end"
+                android:text="ddddddd"
+                android:textColor="#161616" />
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv"
+                android:layout_alignBottom="@id/tv_title"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/read" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_read"
+                android:layout_toLeftOf="@id/iv"
+                android:layout_alignBottom="@id/tv_title"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp"
+                android:text="4456">
+            </TextView>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
